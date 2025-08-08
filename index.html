@@ -1,12 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Simple HTML Page</title>
-      <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple HTML Page</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Welcome to the page</h1>
+    <div class="container">
+      <header>
+        <h1>Welcome to the Page</h1>
+        <p>This is a simple HTML page with various elements.</p>
+      </header>
+
+      <main>
+        <section>
+          <h2>About This Page</h2>
+          <p>
+            This page demonstrates the basic structure of HTML and includes
+            various commonly used elements styled with CSS.
+          </p>
+        </section>
+
+        <section>
+          <h2>List of Features</h2>
+          <ul>
+            <li>Clean and responsive layout</li>
+            <li>Styled form elements</li>
+            <li>Basic table structure</li>
+            <li>Navigation and footer</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Sample Image</h2>
+          <img src="https://via.placeholder.com/400x200" alt="Sample image" style="max-width: 100%; height: auto;" />
+        </section>
+
+        <section>
+          <h2>Example Table</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alice</td>
+                <td>28</td>
+                <td>Designer</td>
+              </tr>
+              <tr>
+                <td>Bob</td>
+                <td>34</td>
+                <td>Developer</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Contact Us</h2>
+          <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+          </form>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy; 2025 Simple HTML Page. All rights reserved.</p>
+      </footer>
+    </div>
   </body>
 </html>
